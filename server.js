@@ -53,7 +53,7 @@ app.post('/change-value', (req, res) => {
 // GET route to view the current value
 app.get('/current-value', (req, res) => {
     const value = getValue();  // Retrieve the value from the file
-    res.status(200).json({ currentValue: value });
+    res.status(200).json({ value });
 });
 
 // Start the server
