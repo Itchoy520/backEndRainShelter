@@ -1,9 +1,13 @@
-const express =require('express');
+import express from "express";
+import cors from "cors";
+import corsOptions from "./config/corsOptions.mjs";
+
+
 const app = express();
-const port = 3000;
-const cors = require("cors");
-const corsOptions = require("./config/corsOptions");
-server.use(cors(corsOptions));
+const PORT = 3000;
+
+app.use(cors(corsOptions));
+
 
 // Define an endpoint
 app.get('/getvalue', (req, res) => {
@@ -11,6 +15,6 @@ app.get('/getvalue', (req, res) => {
 });
 
 // Start the server
-app.listen(port, () => {
-    console.log('Server is running at http://localhost:${port}');
+app.listen(PORT, () => {
+    console.log(`Server is running at http://localhost:${PORT}`);
 });
