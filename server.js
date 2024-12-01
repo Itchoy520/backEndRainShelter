@@ -1,6 +1,9 @@
 const express =require('express');
 const app = express();
 const port = 3000;
+const cors = require("cors");
+const corsOptions = require("./config/corsOptions");
+server.use(cors(corsOptions));
 
 // Define an endpoint
 app.get('/getvalue', (req, res) => {
