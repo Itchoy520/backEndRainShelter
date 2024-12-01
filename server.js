@@ -5,7 +5,6 @@ import corsOptions from "./config/corsOptions.mjs";
 
 const app = express();
 const PORT = 3000;
-let ledState = 0;
 
 app.use(cors(corsOptions));
 
@@ -16,8 +15,8 @@ app.get('/onToggle', (req, res) => {
 });
 
 // Endpoint to toggle the LED State
-app.post('/offToggle', (req, res) => {
-    res.json({ value: 0});
+app.get('/offToggle', (req, res) => {
+    res.json({value: 0});
 })
 
 // Start the server
