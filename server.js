@@ -5,6 +5,7 @@ import corsOptions from "./config/corsOptions.mjs";
 
 const app = express();
 const PORT = 3000;
+let ledState = 0;
 
 app.use(cors(corsOptions));
 
