@@ -18,7 +18,7 @@ app.get('/getvalue', (req, res) => {
 // Endpoint to toggle the LED State
 app.post('/toggle', (req, res) => {
     ledState = ledState === 0 ? 1 : 0; // Toggle LED state
-    res.json({ success: true, value: ledState });
+    res.json({ value: ledState });
 })
 
 // Start the server
