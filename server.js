@@ -11,14 +11,13 @@ app.use(cors(corsOptions));
 
 
 // Define an endpoint
-app.get('/getvalue', (req, res) => {
+app.get('/onToggle', (req, res) => {
     res.json({value: 1})
 });
 
 // Endpoint to toggle the LED State
-app.post('/toggle', (req, res) => {
-    ledState = ledState === 0 ? 1 : 0; // Toggle LED state
-    res.json({ value: ledState });
+app.post('/offToggle', (req, res) => {
+    res.json({ value: 0});
 })
 
 // Start the server
