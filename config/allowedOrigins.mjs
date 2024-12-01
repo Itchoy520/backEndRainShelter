@@ -1,5 +1,5 @@
 const allowedOrigins = [
-    "http://localhost:3000",
-    "https://backendrainshelter.onrender.com",
+    "http://localhost:5173",
+    "https://rainshelter3.onrender.com",
   ];
   export default allowedOrigins;
