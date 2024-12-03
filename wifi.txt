@@ -1,1 +1,0 @@
-{"ssid":"asdasd","password":"asdasd"}
